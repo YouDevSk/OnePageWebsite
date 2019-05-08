@@ -1,0 +1,14 @@
+#home-section {
+  background-color: $bg-home;
+
+  #home-banner {
+    padding: 15vh 0;
+  }
+}
+
+#our-team {
+
+  img {
+    @include objectFit();
+  }
+}

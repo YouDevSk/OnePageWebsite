@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+</head>
+<body>
+  <!-- header section -->
+  <header class="uk-light uk-sticky uk-sticky-below uk-sticky-fixed uk-width-1-1" style="position:fixed">
+    <div class="uk-container">
+      <nav class="uk-navbar uk-navbar-transparent">
+        <div class="uk-navbar-left">
+          <a class="uk-navbar-item uk-logo" href="home-section">
+            <strong>BUILDERS</strong>
+          </a>
+        </div>
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav uk-visible@s">
+            <li class="uk-active">
+              <a class="uk-text-bold scrollToButton" href="home-section">Home</a>
+            </li>
+            <li class="uk-active">
+              <a class="uk-text-bold scrollToButton" href="reference-section">Reference</a>
+            </li>
+            <li class="uk-active">
+              <a class="uk-text-bold scrollToButton" href="contact-section">Contact</a>
+            </li>
+            <li class="uk-active">
+              <a href="about-section" class="uk-text-bold scrollToButton">About</a>
+            </li>
+          </ul>
+          <a data-uk-navbar-toggle-icon class="uk-navbar-toggle uk-hidden@s" href="#" data-uk-toggle="target: #offcanvas-overlay"></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- main section-->
+  <main>
+    <!-- home section -->
+    <section class="uk-section" id="home-section">
+      <div class="uk-container">
+        <div id="home-banner" class="uk-flex uk-child-width-1-2@m" data-uk-grid>
+          <div class="uk-flex">
+            <div class="uk-padding uk-padding-remove-left">
+              <h1 class="uk-title uk-text-bold">
+                  BUILDERS & Co.
+              </h1>
+              <h4 class="uk-title uk-margin-small-top">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum perspiciatis nemo quos soluta? Officia ad natus blanditiis sapiente dicta.
+              </h4>
+              <button class="uk-button uk-button-secondary">Find More</button>
+            </div>
+          </div>
+          <div class="uk-padding uk-padding-remove-right">
+            <img src="assets/img/images/front-img.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- reference section -->
+    <section class="uk-section" id="reference-section">
+      <div class="uk-container">
+        <h2 class="uk-text-bold uk-text-center uk-text-uppercase section-header">
+          our last projects
+        </h2>
+        <div class="uk-position-relative uk-visible-toggle uk-light uk-width-1-2@m" tabindex="-1" data-uk-slideshow="autoplay: true; autoplay-interval: 4500" style="margin: 0 auto;">
+
+          <ul class="uk-slideshow-items">
+              <li>
+                  <img src="https://images.pexels.com/photos/830891/pexels-photo-830891.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" data-uk-cover>
+                  <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                      <h3 class="uk-margin-remove">Building no. 1</h3>
+                      <p class="uk-margin-remove uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" data-uk-cover>
+                  <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                      <h3 class="uk-margin-remove">Building no. 2</h3>
+                      <p class="uk-margin-remove uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </li>
+              <li>
+                  <img src="https://images.pexels.com/photos/425047/pexels-photo-425047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" data-uk-cover>
+                  <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                      <h3 class="uk-margin-remove">Building no. 3</h3>
+                      <p class="uk-margin-remove uk-visible@m">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </li>
+          </ul>
+      
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+      
+      </div>
+      </div>
+    </section>
+    <!-- about section -->
+    <div class="uk-section" id="about-section">
+      <div class="uk-container uk-text-center">
+        <h2 class="uk-text-bold uk-text-center uk-text-uppercase section-header">
+          BUILDERS & Co.
+        </h2>
+        <p class="uk-text-large uk-margin-large-bottom">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis reiciendis ad deserunt, quos officia a?
+        </p>
+        <aside class="uk-section">
+            <div class="uk-flex uk-flex-center uk-child-width-1-3@m" data-uk-grid>
+                <!-- card -->
+                <div class="uk-card uk-padding-medium">
+                  <span data-uk-icon="icon:users; ratio: 2"></span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ut blanditiis. Expedita blanditiis ipsam repellendus nesciunt vitae officia possimus porro!
+                  </p>
+                </div>
+                <!-- card -->
+                <div class="uk-card uk-padding-medium">
+                    <span data-uk-icon="icon:home; ratio: 2"></span>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ut blanditiis. Expedita blanditiis ipsam repellendus nesciunt vitae officia possimus porro!
+                    </p>
+                </div>
+                <!-- card -->
+                <div class="uk-card uk-padding-medium">
+                  <span data-uk-icon="icon:clock; ratio: 2"></span>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, ut blanditiis. Expedita blanditiis ipsam repellendus nesciunt vitae officia possimus porro!
+                  </p>
+                </div>
+              </div>
+        </aside>
+        <aside id="our-team" class="uk-section">
+          <h2 class="uk-text-bold uk-text-center uk-text-uppercase section-header">
+            our team
+          </h2>
+          <div class="uk-flex uk-flex-center uk-child-width-1-3@s" data-uk-grid data-uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 300; repeat: false">
+            <div class="uk-card">
+                <div class="uk-position-relative">
+                  <img src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' width="650" height="433" alt="">
+                  <div class="uk-padding-small uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                      <h3 class="uk-margin-remove">John J. Keeshan</h3>
+                      <p class="uk-margin-remove uk-visible@m">Architect</p>
+                  </div>
+                </div>
+            </div>
+            <div class="uk-card">
+                <div class="uk-position-relative">
+                  <img src='https://images.pexels.com/photos/594610/pexels-photo-594610.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' width="650" height="433" alt="">
+                  <div class="uk-padding-small uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                      <h3 class="uk-margin-remove">Alvaro Cortez</h3>
+                      <p class="uk-margin-remove uk-visible@m">CEO</p>
+                  </div>
+                </div>
+            </div>
+            <div class="uk-card">
+                <div class="uk-position-relative">
+                  <img src='https://images.pexels.com/photos/412840/pexels-photo-412840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' width="650" height="433" alt="" >
+                  <div class="uk-padding-small uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
+                      <h3 class="uk-margin-remove">Tom Higgins</h3>
+                      <p class="uk-margin-remove uk-visible@m">Customer service</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- contact section -->
+    <section class="uk-section uk-padding-remove-bottom" id="contact-section">
+      <div class="uk-container uk-margin-bottom">
+        <h2 class="uk-title uk-text-uppercase uk-text-bold uk-text-center section-header">
+          contact us
+        </h2>
+        <div class="uk-margin-bottom">
+          <form class="uk-width-1-2@m uk-margin-auto">
+            <fieldset class="uk-fieldset">
+              <div class="uk-flex uk-child-width-1-2@s" data-uk-grid>
+                <div>
+                  <input type="text" class="uk-input" placeholder="Your Name">
+                </div>
+                <div>
+                  <input type="email" class="uk-input" placeholder="Your email">
+                </div>
+              </div>
+              <div class="uk-margin">
+                <textarea name="message" cols="30" rows="10" class="uk-textarea" placeholder="Your message"></textarea>
+              </div>
+              <div class="uk-text-center">
+                <button class="uk-width-1-2@m uk-width-1-1 uk-margin-auto uk-button uk-button-primary">
+                Send
+              </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      <div class="uk-section uk-dark uk-text-center uk-section-primary">
+        <div class="uk-container">
+          <div class="uk-flex uk-child-width-1-3@m" data-uk-grid>
+            <div class="uk-card">
+              <span data-uk-icon="icon:location; ratio: 1.5"></span>
+              <p>
+                266 Cobain street, <br>
+                000 00 Mars City, <br>
+                Mars
+              </p>
+            </div>
+            <div class="uk-card">
+              <span data-uk-icon="icon: world; ratio: 1.5"></span>
+              <p>
+                <a href="mailto:john.small@gmail.com">john.small@gmail.com</a> <br>
+                <a href="https://www.google.sk" target="_blank">www.mywebsitename.com</a>
+              </p>
+            </div>
+            <div class="uk-card">
+                <span data-uk-icon="icon: receiver; ratio: 1.5"></span>
+                <p>
+                  <a href="tel:+421000000">+421 000 000</a>
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- footer section -->
+  <footer>
+    <div class="uk-container uk-padding">
+      <h2 class="uk-title uk-text-bold uk-text-center uk-margin-medium">Find more on social</h2>
+      <div class="uk-flex uk-flex-center">
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" class="uk-icon-button  uk-margin-small-right" data-uk-icon="facebook"></a>
+        </div>
+        <div>
+          <a href="https://www.twitter.com/" target="_blank" class="uk-icon-button  uk-margin-small-right" data-uk-icon="twitter"></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/" target="_blank" class="uk-icon-button  uk-margin-small-right" data-uk-icon="instagram"></a>
+        </div>
+        <div>
+          <a href="https://www.gmail.com/" target="_blank" class="uk-icon-button  uk-margin-small-right" data-uk-icon="google"></a>
+        </div>
+      </div>
+    </div>
+    <div class="uk-padding uk-light uk-text-center uk-background-secondary">
+        <p>
+            Copyright ©2019 All rights reserved | made by <strong><a href="">YouDev</a></strong>
+        </p>
+    </div>
+  </footer>
+  <!-- scroll to top -->
+  <button id="toTop" class="uk-button uk-button-primary">
+      <span data-uk-icon="icon: arrow-up; ratio: 1.5"></span>
+  </button>
+  <!-- off canvas -->
+  <div class="uk-navbar-nav uk-hidden@s">
+            <div id="offcanvas-overlay" data-uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar">         
+                <button class="uk-offcanvas-close" type="button" data-uk-close></button>
+                 <h3>
+                  <a class="uk-text-bold scrollToButton" href="home-section">Home</a>
+                 </h3>
+                 <h3>
+                  <a class="uk-text-bold scrollToButton" href="reference-section">Reference</a>
+                 </h3>
+                 <h3>
+                  <a class="uk-text-bold scrollToButton" href="contact-section">Contact</a>
+                 </h3>
+                 <h3>
+                  <a class="uk-text-bold scrollToButton" href="about-section">About</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+  <script src="app.js"></script>
+</body>
+</html>
