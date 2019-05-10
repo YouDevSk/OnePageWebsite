@@ -1,0 +1,53 @@
+header {
+  @include bgPrimary();
+  z-index: 10;
+}
+
+.uk-navbar-left {
+  margin-left: -15px;
+}
+
+.uk-navbar-right {
+  margin-right: -15px;
+}
+
+.uk-logo {
+  color: white;
+}
+
+.uk-active {
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.uk-navbar-nav .scrollToButton {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: $bg-home;
+    bottom: 20px;
+    width: 0%;
+    height: 1px;
+    left: 15px;
+    transition: width .4s;
+  }
+
+  &:hover {
+    
+    &::after {
+      width: calc(100% - 30px);
+    }
+  }
+}
+
+.uk-offcanvas-bar a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
